@@ -1,0 +1,9 @@
+{
+  "project": "MNE",
+  "cat": "BRAIN_COMPUTER_INTERFACE",
+  "upstream_url": "unknown",
+  "upstream_sha": "UNMEASURED",
+  "clone_tree_sha3_256": "e4067f78f181a94318a88281ce3ac4f9600d507a0d98f39cdffefca94b217534",
+  "license": "MIT",
+  "measured_utc": "2026-10-06T06:52:56.186518Z"
+}

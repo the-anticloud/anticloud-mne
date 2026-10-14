@@ -1,0 +1,10 @@
+{
+  "project": "MNE",
+  "category": "BRAIN_COMPUTER_INTERFACE",
+  "path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\BRAIN_COMPUTER_INTERFACE\\MNE",
+  "status": "failed",
+  "reason": "unreadable BENCH.json: 'metrics'",
+  "files_count": null,
+  "lines_of_code": null,
+  "sha": null
+}
