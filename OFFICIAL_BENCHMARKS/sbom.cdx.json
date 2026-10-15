@@ -1,0 +1,221 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:b78b999d-a9fa-586c-a505-a42799f00e49",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-06T05:55:34Z",
+    "component": {
+      "type": "application",
+      "name": "MNE",
+      "version": "83b357604d34",
+      "bom-ref": "pkg:generic/anticloud/MNE@83b357604d34",
+      "purl": "pkg:generic/anticloud/MNE@83b357604d34",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": ""
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": ">=6.0",
+      "purl": "pkg:pypi/pyyaml@6.0",
+      "bom-ref": "pypi/PyYAML@>=6.0"
+    },
+    {
+      "type": "library",
+      "name": "ctransformers",
+      "version": ">=0.2.27",
+      "purl": "pkg:pypi/ctransformers@0.2.27",
+      "bom-ref": "pypi/ctransformers@>=0.2.27"
+    },
+    {
+      "type": "library",
+      "name": "llama-cpp-python",
+      "version": ">=0.2.0",
+      "purl": "pkg:pypi/llama-cpp-python@0.2.0",
+      "bom-ref": "pypi/llama-cpp-python@>=0.2.0"
+    },
+    {
+      "type": "library",
+      "name": "huggingface-hub",
+      "version": ">=0.20",
+      "purl": "pkg:pypi/huggingface-hub@0.20",
+      "bom-ref": "pypi/huggingface-hub@>=0.20"
+    },
+    {
+      "type": "library",
+      "name": "fastembed",
+      "version": ">=0.3.0",
+      "purl": "pkg:pypi/fastembed@0.3.0",
+      "bom-ref": "pypi/fastembed@>=0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "onnxruntime",
+      "version": ">=1.21.0,<1.29",
+      "purl": "pkg:pypi/onnxruntime@1.21.0,<1.29",
+      "bom-ref": "pypi/onnxruntime@>=1.21.0,<1.29"
+    },
+    {
+      "type": "library",
+      "name": "sqlite-vec",
+      "version": ">=0.1.9,<0.1.10",
+      "purl": "pkg:pypi/sqlite-vec@0.1.9,<0.1.10",
+      "bom-ref": "pypi/sqlite-vec@>=0.1.9,<0.1.10"
+    },
+    {
+      "type": "library",
+      "name": "mcp",
+      "version": ">=2.0.0; python_version >= ",
+      "purl": "pkg:pypi/mcp@2.0.0; python_version >= ",
+      "bom-ref": "pypi/mcp@>=2.0.0; python_version >= "
+    },
+    {
+      "type": "library",
+      "name": "anyio",
+      "version": ">=4.0; python_version >= ",
+      "purl": "pkg:pypi/anyio@4.0; python_version >= ",
+      "bom-ref": "pypi/anyio@>=4.0; python_version >= "
+    },
+    {
+      "type": "library",
+      "name": "openclaw",
+      "version": ">=0.1.0; python_version >= ",
+      "purl": "pkg:pypi/openclaw@0.1.0; python_version >= ",
+      "bom-ref": "pypi/openclaw@>=0.1.0; python_version >= "
+    },
+    {
+      "type": "library",
+      "name": "pypdfium2",
+      "version": ">=4.30",
+      "purl": "pkg:pypi/pypdfium2@4.30",
+      "bom-ref": "pypi/pypdfium2@>=4.30"
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": ">=10",
+      "purl": "pkg:pypi/pillow@10",
+      "bom-ref": "pypi/pillow@>=10"
+    },
+    {
+      "type": "library",
+      "name": "pytest",
+      "version": ">=7.0",
+      "purl": "pkg:pypi/pytest@7.0",
+      "bom-ref": "pypi/pytest@>=7.0"
+    },
+    {
+      "type": "library",
+      "name": "mnemosyne-install",
+      "version": "=mnemosyne.install:main",
+      "purl": "pkg:pypi/mnemosyne-install@mnemosyne.install:main",
+      "bom-ref": "pypi/mnemosyne-install@=mnemosyne.install:main"
+    },
+    {
+      "type": "library",
+      "name": "mnemosyne-uninstall",
+      "version": "=mnemosyne.install:uninstall_main",
+      "purl": "pkg:pypi/mnemosyne-uninstall@mnemosyne.install:uninstall_main",
+      "bom-ref": "pypi/mnemosyne-uninstall@=mnemosyne.install:uninstall_main"
+    },
+    {
+      "type": "library",
+      "name": "mnemosyne",
+      "version": "=mnemosyne.cli:run_cli",
+      "purl": "pkg:pypi/mnemosyne@mnemosyne.cli:run_cli",
+      "bom-ref": "pypi/mnemosyne@=mnemosyne.cli:run_cli"
+    },
+    {
+      "type": "library",
+      "name": "mnemosyne-browser",
+      "version": "=mnemosyne.integrations.memory_browser:main",
+      "purl": "pkg:pypi/mnemosyne-browser@mnemosyne.integrations.memory_browser:main",
+      "bom-ref": "pypi/mnemosyne-browser@=mnemosyne.integrations.memory_browser:main"
+    },
+    {
+      "type": "library",
+      "name": "mnemosyne-auto-save",
+      "version": "=mnemosyne.integrations.auto_save_openwebui:main",
+      "purl": "pkg:pypi/mnemosyne-auto-save@mnemosyne.integrations.auto_save_openwebui:main",
+      "bom-ref": "pypi/mnemosyne-auto-save@=mnemosyne.integrations.auto_save_openwebui:main"
+    },
+    {
+      "type": "library",
+      "name": "@types/vscode",
+      "version": "^1.85.0",
+      "purl": "pkg:npm/@types/vscode@^1.85.0",
+      "bom-ref": "npm/@types/vscode@^1.85.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "^20.0.0",
+      "purl": "pkg:npm/@types/node@^20.0.0",
+      "bom-ref": "npm/@types/node@^20.0.0"
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "^5.3.0",
+      "purl": "pkg:npm/typescript@^5.3.0",
+      "bom-ref": "npm/typescript@^5.3.0"
+    },
+    {
+      "type": "library",
+      "name": "eslint",
+      "version": "^8.50.0",
+      "purl": "pkg:npm/eslint@^8.50.0",
+      "bom-ref": "npm/eslint@^8.50.0"
+    },
+    {
+      "type": "library",
+      "name": "builtin-modules",
+      "version": "3.3.0",
+      "purl": "pkg:npm/builtin-modules@3.3.0",
+      "bom-ref": "npm/builtin-modules@3.3.0"
+    },
+    {
+      "type": "library",
+      "name": "esbuild",
+      "version": "0.19.0",
+      "purl": "pkg:npm/esbuild@0.19.0",
+      "bom-ref": "npm/esbuild@0.19.0"
+    },
+    {
+      "type": "library",
+      "name": "obsidian",
+      "version": "^1.5.0",
+      "purl": "pkg:npm/obsidian@^1.5.0",
+      "bom-ref": "npm/obsidian@^1.5.0"
+    },
+    {
+      "type": "library",
+      "name": "tslib",
+      "version": "2.6.0",
+      "purl": "pkg:npm/tslib@2.6.0",
+      "bom-ref": "npm/tslib@2.6.0"
+    }
+  ]
+}

@@ -1,0 +1,1302 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "MNE",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\BRAIN_COMPUTER_INTERFACE\\MNE\\UPSTREAM_CLONE",
+  "git": {
+   "head": null,
+   "url": null,
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_unverified": true,
+   "note": "prior contamination (OPENMRS parent SHA + embedded token) removed; resolve via GitHub API before quoting"
+  }
+ },
+ "metrics": {
+  "files_total": 586,
+  "source_files_scanned": 480,
+  "lines_of_code": 188966,
+  "languages": {
+   ".py": 466,
+   ".md": 70,
+   ".sh": 10,
+   "(none)": 9,
+   ".json": 7,
+   ".yaml": 5,
+   ".ts": 5,
+   ".toml": 4,
+   ".yml": 2,
+   ".mdx": 2,
+   ".snapshot": 1,
+   ".in": 1,
+   ".txt": 1,
+   ".lock": 1,
+   ".svg": 1
+  }
+ },
+ "licence": {
+  "spdx": "MIT",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 37,
+  "unique": 26,
+  "by_ecosystem": {
+   "npm": 10,
+   "pypi": 27
+  },
+  "list": [
+   {
+    "ecosystem": "pypi",
+    "name": "PyYAML",
+    "version": ">=6.0",
+    "source_file": "pyproject.toml",
+    "raw": "PyYAML>=6.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "ctransformers",
+    "version": ">=0.2.27",
+    "source_file": "setup.py",
+    "raw": "ctransformers>=0.2.27"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "llama-cpp-python",
+    "version": ">=0.2.0",
+    "source_file": "setup.py",
+    "raw": "llama-cpp-python>=0.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "huggingface-hub",
+    "version": ">=0.20",
+    "source_file": "setup.py",
+    "raw": "huggingface-hub>=0.20"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "fastembed",
+    "version": ">=0.3.0",
+    "source_file": "setup.py",
+    "raw": "fastembed>=0.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "onnxruntime",
+    "version": ">=1.21.0,<1.29",
+    "source_file": "setup.py",
+    "raw": "onnxruntime>=1.21.0,<1.29"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "sqlite-vec",
+    "version": ">=0.1.9,<0.1.10",
+    "source_file": "setup.py",
+    "raw": "sqlite-vec>=0.1.9,<0.1.10"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mcp",
+    "version": ">=2.0.0; python_version >= ",
+    "source_file": "setup.py",
+    "raw": "mcp>=2.0.0; python_version >="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "anyio",
+    "version": ">=4.0; python_version >= ",
+    "source_file": "setup.py",
+    "raw": "anyio>=4.0; python_version >="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "openclaw",
+    "version": ">=0.1.0; python_version >= ",
+    "source_file": "setup.py",
+    "raw": "openclaw>=0.1.0; python_version >="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pypdfium2",
+    "version": ">=4.30",
+    "source_file": "setup.py",
+    "raw": "pypdfium2>=4.30"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pillow",
+    "version": ">=10",
+    "source_file": "setup.py",
+    "raw": "pillow>=10"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytest",
+    "version": ">=7.0",
+    "source_file": "setup.py",
+    "raw": "pytest>=7.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "ctransformers",
+    "version": ">=0.2.27",
+    "source_file": "setup.py",
+    "raw": "ctransformers>=0.2.27"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "llama-cpp-python",
+    "version": ">=0.2.0",
+    "source_file": "setup.py",
+    "raw": "llama-cpp-python>=0.2.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "huggingface-hub",
+    "version": ">=0.20",
+    "source_file": "setup.py",
+    "raw": "huggingface-hub>=0.20"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "fastembed",
+    "version": ">=0.3.0",
+    "source_file": "setup.py",
+    "raw": "fastembed>=0.3.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "onnxruntime",
+    "version": ">=1.21.0,<1.29",
+    "source_file": "setup.py",
+    "raw": "onnxruntime>=1.21.0,<1.29"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "sqlite-vec",
+    "version": ">=0.1.9,<0.1.10",
+    "source_file": "setup.py",
+    "raw": "sqlite-vec>=0.1.9,<0.1.10"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mcp",
+    "version": ">=2.0.0; python_version >= ",
+    "source_file": "setup.py",
+    "raw": "mcp>=2.0.0; python_version >="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "anyio",
+    "version": ">=4.0; python_version >= ",
+    "source_file": "setup.py",
+    "raw": "anyio>=4.0; python_version >="
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "pytest",
+    "version": ">=7.0",
+    "source_file": "setup.py",
+    "raw": "pytest>=7.0"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mnemosyne-install",
+    "version": "=mnemosyne.install:main",
+    "source_file": "setup.py",
+    "raw": "mnemosyne-install=mnemosyne.install:main"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mnemosyne-uninstall",
+    "version": "=mnemosyne.install:uninstall_main",
+    "source_file": "setup.py",
+    "raw": "mnemosyne-uninstall=mnemosyne.install:uninstall_main"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mnemosyne",
+    "version": "=mnemosyne.cli:run_cli",
+    "source_file": "setup.py",
+    "raw": "mnemosyne=mnemosyne.cli:run_cli"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mnemosyne-browser",
+    "version": "=mnemosyne.integrations.memory_browser:main",
+    "source_file": "setup.py",
+    "raw": "mnemosyne-browser=mnemosyne.integrations.memory_browser:main"
+   },
+   {
+    "ecosystem": "pypi",
+    "name": "mnemosyne-auto-save",
+    "version": "=mnemosyne.integrations.auto_save_openwebui:main",
+    "source_file": "setup.py",
+    "raw": "mnemosyne-auto-save=mnemosyne.integrations.auto_save_openwebui:main"
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/vscode",
+    "version": "^1.85.0",
+    "source_file": "integrations/vscode-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^20.0.0",
+    "source_file": "integrations/vscode-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.3.0",
+    "source_file": "integrations/vscode-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "eslint",
+    "version": "^8.50.0",
+    "source_file": "integrations/vscode-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "@types/node",
+    "version": "^20.0.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "builtin-modules",
+    "version": "3.3.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "esbuild",
+    "version": "0.19.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "obsidian",
+    "version": "^1.5.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "tslib",
+    "version": "2.6.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   },
+   {
+    "ecosystem": "npm",
+    "name": "typescript",
+    "version": "^5.3.0",
+    "source_file": "integrations/obsidian-mnemosyne/package.json",
+    "raw": ""
+   }
+  ]
+ },
+ "owasp_top10": {
+  "total_findings": 80,
+  "files_with_findings": 70,
+  "severity": {
+   "high": 19,
+   "medium": 3,
+   "low": 58
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tests/test_fact_recall_integration.py",
+      "line": 65,
+      "cwe": "CWE-327",
+      "snippet": "content_hash = hashlib.md5(fr[\"content\"].encode()).hexdigest()"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 8,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_canon_sign_gate_snapshot.py",
+      "line": 65,
+      "cwe": "CWE-95",
+      "snippet": "# sqlite3.connect across the whole module exec (the gate references it as"
+     },
+     {
+      "severity": "high",
+      "file": "scripts/cleanup_noisy_mentions.py",
+      "line": 71,
+      "cwe": "CWE-89",
+      "snippet": "print(f\"\\n[DRY RUN] Would delete {noisy_total} annotations from {db_path}\")"
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/hermes_config.py",
+      "line": 40,
+      "cwe": "CWE-502",
+      "snippet": "config = yaml.load(config_file, Loader=loader)"
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/core/sync.py",
+      "line": 1185,
+      "cwe": "CWE-89",
+      "snippet": "f\"\"\"SELECT {', '.join(columns)} FROM main.working_memory"
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/core/triples.py",
+      "line": 277,
+      "cwe": "CWE-89",
+      "snippet": "cursor.execute(f\"SELECT * FROM triples WHERE {where_clause} ORDER BY valid_from DESC\", params)"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/zero/hooks/after-tool.sh",
+      "line": 16,
+      "cwe": "CWE-78",
+      "snippet": "input=\"$(cat)\""
+     },
+     {
+      "severity": "high",
+      "file": "integrations/vscode-mnemosyne/src/extension.ts",
+      "line": 71,
+      "cwe": "CWE-78",
+      "snippet": "statusBar.text = '$(database) Mnemosyne';"
+     },
+     {
+      "severity": "high",
+      "file": "integrations/hermes/src/mnemosyne_hermes/install.py",
+      "line": 735,
+      "cwe": "CWE-95",
+      "snippet": "a Python console script containing ``os.execv(...)`` or ``exec(code)`` is a"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 17,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_beam.py",
+      "line": 1429,
+      "cwe": "CWE-",
+      "snippet": "beam.scratchpad_write(\"todo: fix auth\")"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_beam_e4_remember_batch_veracity.py",
+      "line": 296,
+      "cwe": "CWE-",
+      "snippet": "rare_token = \"veraxxxordtest\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_c4_recall_diagnostics.py",
+      "line": 281,
+      "cwe": "CWE-",
+      "snippet": "beam.recall(\"zzzxxxnomatch\", top_k=10)      # fallback"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_memoria_instruction_boundaries.py",
+      "line": 141,
+      "cwe": "CWE-",
+      "snippet": "\"Anunca todos los registros permanecen disponibles siempre\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_prefetch_query_sanitize.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "('[TODO] fix the login bug', '[TODO] fix the login bug'),"
+     },
+     {
+      "severity": "low",
+      "file": "scripts/release.py",
+      "line": 435,
+      "cwe": "CWE-",
+      "snippet": "'  <li className=\"mb-2\">TODO the headline changes</li>'"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/entities.py",
+      "line": 70,
+      "cwe": "CWE-",
+      "snippet": "\"todo\", \"umbrella\", \"unresolved\", \"update\", \"verified\", \"write\","
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/filters.py",
+      "line": 112,
+      "cwe": "CWE-",
+      "snippet": "r\"^\\s*(TODO|FIXME|HACK|XXX)\\b\","
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/query_sanitize.py",
+      "line": 19,
+      "cwe": "CWE-",
+      "snippet": "# -- song titles like [Untitled], tags like [TODO], timestamps like"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/agentic.py",
+      "line": 183,
+      "cwe": "CWE-",
+      "snippet": "script = gen.generate_script(\"mem0\", api_key=\"sk-xxx\", user_id=\"alice\")"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/base.py",
+      "line": 57,
+      "cwe": "CWE-",
+      "snippet": "importer = Mem0Importer(api_key=\"sk-xxx\", user_id=\"alice\")"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/honcho.py",
+      "line": 29,
+      "cwe": "CWE-",
+      "snippet": "api_key=\"sk-xxx\",          # Honcho API key"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/letta.py",
+      "line": 32,
+      "cwe": "CWE-",
+      "snippet": "api_key=\"sk-xxx\",         # Letta API key"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/mem0.py",
+      "line": 36,
+      "cwe": "CWE-",
+      "snippet": "api_key=\"sk-xxx\","
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/supermemory.py",
+      "line": 26,
+      "cwe": "CWE-",
+      "snippet": "api_key=\"sk-xxx\",          # SuperMemory API key"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/zep.py",
+      "line": 30,
+      "cwe": "CWE-",
+      "snippet": "api_key=\"sk-xxx\",         # Zep API key"
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/core/importers/__init__.py",
+      "line": 17,
+      "cwe": "CWE-",
+      "snippet": "hermes mnemosyne import --from mem0 --api-key sk-xxx"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "mnemosyne/integrations/openwebui_tool.py",
+      "line": 77,
+      "cwe": "CWE-1188",
+      "snippet": "default=True,"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/hermes/src/mnemosyne_hermes/install.py",
+      "line": 2387,
+      "cwe": "CWE-1188",
+      "snippet": "default=True,"
+     }
+    ]
+   },
+   "A06-VulnerableComponents": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_hermes_catalog_plugin.py",
+      "line": 59,
+      "cwe": "CWE-1104",
+      "snippet": "when the running version fails this specifier, so an exact pin (`==0.21.4`) would uninstall"
+     }
+    ]
+   },
+   "A07-AuthFailures": {
+    "count": 11,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_beam_e4_remember_batch_veracity.py",
+      "line": 198,
+      "cwe": "CWE-798",
+      "snippet": "rare_token = \"quetzzzlcoatl\"  # unlikely to collide with FTS noise"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_beam_e5_polyphonic_recall.py",
+      "line": 557,
+      "cwe": "CWE-798",
+      "snippet": "unique_token = \"e5contentmarkerxyz\""
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_doctor.py",
+      "line": 293,
+      "cwe": "CWE-798",
+      "snippet": "raw_secret = \"runtime-diagnostics-private-secret\"  # nosec - regression fixture"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_doctor_cli.py",
+      "line": 20,
+      "cwe": "CWE-798",
+      "snippet": "FIXTURE_SECRET = \"doctor-cli-fixture-secret-9f7c\"  # nosec - redaction regression fixture"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_filters.py",
+      "line": 108,
+      "cwe": "CWE-798",
+      "snippet": "raw_secret = \"sk-abc123def456ghi789jkl012mno345pqr678\""
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_hermes_core_release_contract.py",
+      "line": 175,
+      "cwe": "CWE-798",
+      "snippet": "token = \"release_contract_1014_unique_token\""
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_hygiene.py",
+      "line": 351,
+      "cwe": "CWE-798",
+      "snippet": "raw_secret = \"redaction-before-truncation-secret\"  # nosec - regression fixture"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_remember_media_tool.py",
+      "line": 70,
+      "cwe": "CWE-798",
+      "snippet": "secret.write_text(\"-----BEGIN OPENSSH PRIVATE KEY-----\")"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_repair.py",
+      "line": 29,
+      "cwe": "CWE-798",
+      "snippet": "RAW_SECRET = \"repair-output-private-secret-79d1\"  # nosec - redaction fixture"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_sync_correctness.py",
+      "line": 1024,
+      "cwe": "CWE-798",
+      "snippet": "api_key=\"test-api-key\","
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/core/importers/agentic.py",
+      "line": 24,
+      "cwe": "CWE-798",
+      "snippet": "client = MemoryClient(api_key=\"YOUR_API_KEY\", host=\"https://api.mem0.ai\")"
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 40,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_beam.py",
+      "line": 841,
+      "cwe": "CWE-319",
+      "snippet": "\"value\": \"Project Atlas lives at /opt/apps/project-atlas and URL http://127.0.0.1:8765/.\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_blob_resolver.py",
+      "line": 133,
+      "cwe": "CWE-319",
+      "snippet": "\"http://example.com/x\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_conflict_safety_contract.py",
+      "line": 198,
+      "cwe": "CWE-319",
+      "snippet": "@pytest.mark.parametrize(\"endpoint\", [\"http://validator.test\", \"ftp://validator.test\", \"https://\", \"https://user:secret@validator.test\", None])"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_embedding_api_retry.py",
+      "line": 54,
+      "cwe": "CWE-319",
+      "snippet": "monkeypatch.setenv(\"MNEMOSYNE_EMBEDDING_API_URL\", \"http://127.0.0.1:11435/v1\")"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_embedding_dim_fresh_process.py",
+      "line": 91,
+      "cwe": "CWE-319",
+      "snippet": "{\"MNEMOSYNE_EMBEDDING_API_URL\": \"http://localhost:8000/v1\"},"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_embedding_max_chars.py",
+      "line": 57,
+      "cwe": "CWE-319",
+      "snippet": "monkeypatch.setenv(\"MNEMOSYNE_EMBEDDING_API_URL\", \"http://127.0.0.1:11435/v1\")"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_embedding_prefixes.py",
+      "line": 37,
+      "cwe": "CWE-319",
+      "snippet": "url = f\"http://127.0.0.1:{server.server_port}/v1\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_extraction.py",
+      "line": 415,
+      "cwe": "CWE-319",
+      "snippet": "monkeypatch.setattr(local_llm, \"LLM_BASE_URL\", \"http://remote/v1\")"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_hermes_hindsight_cli.py",
+      "line": 131,
+      "cwe": "CWE-319",
+      "snippet": "base_url=\"http://127.0.0.1:8888\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_llm_providers.py",
+      "line": 150,
+      "cwe": "CWE-319",
+      "snippet": "\"MNEMOSYNE_LLM_BASE_URL\": \"http://localhost:8080/v1\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_local_llm.py",
+      "line": 110,
+      "cwe": "CWE-319",
+      "snippet": "monkeypatch.setenv(\"MNEMOSYNE_LLM_BASE_URL\", \"http://localhost:8080/v1\")"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_mcp_streamable_http.py",
+      "line": 482,
+      "cwe": "CWE-319",
+      "snippet": "with TestClient(authed_app, base_url=\"http://localhost:8080\") as client:"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_media_doctor.py",
+      "line": 27,
+      "cwe": "CWE-319",
+      "snippet": "INSERT INTO media_assets VALUES ('asset-live', 'url', 'http://x/1');"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_media_schema.py",
+      "line": 120,
+      "cwe": "CWE-319",
+      "snippet": "\"VALUES ('a', 'url', 'http://x/1', 'image')\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_media_span_key.py",
+      "line": 250,
+      "cwe": "CWE-319",
+      "snippet": "assert compute_asset_id(\"url\", \"http://x/y\", content_hash=\"AB12\") == \"sha256:ab12\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_media_store.py",
+      "line": 22,
+      "cwe": "CWE-319",
+      "snippet": "params = {\"ref_kind\": \"url\", \"ref_value\": \"http://x/1\", \"modality\": \"image\"}"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_modality_documents.py",
+      "line": 43,
+      "cwe": "CWE-319",
+      "snippet": "W = 'xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"'"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_modality_openai_audio.py",
+      "line": 55,
+      "cwe": "CWE-319",
+      "snippet": "return f\"http://{host}:{port}/v1\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_modality_openai_compat.py",
+      "line": 85,
+      "cwe": "CWE-319",
+      "snippet": "return f\"http://{host}:{port}/v1\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_modality_video.py",
+      "line": 63,
+      "cwe": "CWE-319",
+      "snippet": "return f\"http://{host}:{port}/v1\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_prefetch_query_sanitize.py",
+      "line": 37,
+      "cwe": "CWE-319",
+      "snippet": "('[API docs](http://x) how do I auth', '[API docs](http://x) how do I auth'),"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_remember_media_tool.py",
+      "line": 93,
+      "cwe": "CWE-319",
+      "snippet": "\"http://127.0.0.1:8080/a.mp4\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_remote_llm_empty_answer.py",
+      "line": 61,
+      "cwe": "CWE-319",
+      "snippet": "return f\"http://{host}:{port}/v1\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_s1_mcp_sse_auth.py",
+      "line": 627,
+      "cwe": "CWE-319",
+      "snippet": "return server, thread, f\"http://127.0.0.1:{port}\""
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_sync.py",
+      "line": 260,
+      "cwe": "CWE-319",
+      "snippet": "f\"http://127.0.0.1:{server.server_address[1]}/sync/status\","
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 28,
+  "files_with_findings": 26,
+  "severity": {
+   "high": 9,
+   "medium": 12,
+   "low": 7
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "_benchmarks/evaluate_beam_end_to_end.py",
+      "line": 653,
+      "cwe": "CWE-1427",
+      "snippet": "ANSWER_SYSTEM_PROMPT = \"\"\"You are a precise memory assistant answering questions about past conversations. You receive conversation context that may contain the answer."
+     },
+     {
+      "severity": "low",
+      "file": "mnemosyne/extraction/prompts.py",
+      "line": 6,
+      "cwe": "CWE-1427",
+      "snippet": "EXTRACTION_SYSTEM_PROMPT = \"\"\"You extract structured facts from conversation messages. For each message or group of related messages, identify:"
+     }
+    ]
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 7,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_embedding_api_retry.py",
+      "line": 21,
+      "cwe": "CWE-798",
+      "snippet": "monkeypatch.delenv(\"OPENAI_API_KEY\", raising=False)"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_embedding_dim_fresh_process.py",
+      "line": 197,
+      "cwe": "CWE-798",
+      "snippet": "os.environ.pop(\"OPENAI_API_KEY\", None)"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_embedding_max_chars.py",
+      "line": 33,
+      "cwe": "CWE-798",
+      "snippet": "monkeypatch.delenv(\"OPENAI_API_KEY\", raising=False)"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_embedding_prefixes.py",
+      "line": 47,
+      "cwe": "CWE-798",
+      "snippet": "monkeypatch.delenv(\"OPENAI_API_KEY\", raising=False)"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_user_agent_headers.py",
+      "line": 61,
+      "cwe": "CWE-798",
+      "snippet": "# MNEMOSYNE_EMBEDDING_API_KEY / OPENAI_API_KEY can't flip this test onto the"
+     },
+     {
+      "severity": "high",
+      "file": "scripts/generate-docs.py",
+      "line": 239,
+      "cwe": "CWE-798",
+      "snippet": "\"embedding_api_key\": \"API key for a remote embedding provider. Falls back to `OPENAI_API_KEY`.\","
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/core/embeddings.py",
+      "line": 73,
+      "cwe": "CWE-798",
+      "snippet": "_OPENAI_API_KEY = os.environ.get(\"MNEMOSYNE_EMBEDDING_API_KEY\", os.environ.get(\"OPENAI_API_KEY\", \"\"))"
+     }
+    ]
+   },
+   "LLM03-SupplyChain": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "mnemosyne/core/local_llm.py",
+      "line": 234,
+      "cwe": "CWE-494",
+      "snippet": "downloaded = hf_hub_download("
+     }
+    ]
+   },
+   "LLM04-DataPoisoning": {
+    "count": 8,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tests/test_canonical.py",
+      "line": 388,
+      "cwe": "CWE-20",
+      "snippet": "got = json.loads(self.provider.handle_tool_call(\n            \"mnemosyne_model_card\",\n            {\"category\": \"model:user\", \"title\": \"User model\", \"names\": [\"style\"]},"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_embedding_max_chars.py",
+      "line": 42,
+      "cwe": "CWE-20",
+      "snippet": "payload = json.loads(request.data.decode())"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_file_import_dry_run.py",
+      "line": 489,
+      "cwe": "CWE-20",
+      "snippet": "dry_run_result = json.loads(provider._handle_import(\n        {\"input_path\": str(export_path), \"force\": True, \"dry_run\": True}"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_hermes_sync_adapter.py",
+      "line": 83,
+      "cwe": "CWE-20",
+      "snippet": "body = json.loads(request.data.decode(\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_issue_821_review_blockers.py",
+      "line": 558,
+      "cwe": "CWE-20",
+      "snippet": "rejected = json.loads(provider._handle_triple_add({\n                \"subject\": \"user\", \"predicate\": \"prefers\", \"object\": marker,"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_persona_adapter.py",
+      "line": 274,
+      "cwe": "CWE-20",
+      "snippet": "result = json.loads(adapter.handle_tool_call(\n            \"mnemosyne_persona_demote\",\n            {\"persona_id\": pid, \"reason\": \"user changed mind\"},"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_provider_all_15_tools.py",
+      "line": 288,
+      "cwe": "CWE-20",
+      "snippet": "r = json.loads(p2._handle_import({\"input_path\": str(export_path)}))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_sync_correctness.py",
+      "line": 978,
+      "cwe": "CWE-20",
+      "snippet": "body = json.loads(request.data.decode())"
+     }
+    ]
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_hygiene.py",
+      "line": 1130,
+      "cwe": "CWE-862",
+      "snippet": "result = clean_noise(db_path, candidates, action=\"delete\", confirm=False, dry_run=False)"
+     },
+     {
+      "severity": "high",
+      "file": "mnemosyne/cli.py",
+      "line": 1558,
+      "cwe": "CWE-862",
+      "snippet": "confirm = False"
+     }
+    ]
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 3,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "mnemosyne/core/importers/agentic.py",
+      "line": 188,
+      "cwe": "CWE-200",
+      "snippet": "print(instructions)"
+     },
+     {
+      "severity": "medium",
+      "file": "integrations/hermes/src/mnemosyne_hermes/cli.py",
+      "line": 499,
+      "cwe": "CWE-200",
+      "snippet": "print(f\"Agent instructions saved to {output_script}\")"
+     },
+     {
+      "severity": "medium",
+      "file": "hermes_memory_provider/cli.py",
+      "line": 260,
+      "cwe": "CWE-200",
+      "snippet": "print(f\"Agent instructions saved to {output_script}\")"
+     }
+    ]
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/benchmark_vs_vectordbs.py",
+      "line": 5,
+      "cwe": "CWE-",
+      "snippet": "Compares Mnemosyne (FTS5+vec hybrid) against FAISS (flat L2) and"
+     }
+    ]
+   },
+   "LLM09-Misinformation": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_backup_store_isolation.py",
+      "line": 281,
+      "cwe": "CWE-",
+      "snippet": "assert restored[\"backup_used\"] == verified[\"backup_path\"]"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_cli_error_boundary.py",
+      "line": 200,
+      "cwe": "CWE-",
+      "snippet": "_assert_static_failure(result, \"verify_failed\", tmp_path)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_hygiene.py",
+      "line": 424,
+      "cwe": "CWE-",
+      "snippet": "assert verify.execute(\"SELECT COUNT(*) FROM working_memory\").fetchone()[0] == 1"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_repair.py",
+      "line": 483,
+      "cwe": "CWE-",
+      "snippet": "assert verify.execute(\"PRAGMA quick_check\").fetchone()[0] == \"ok\""
+     }
+    ]
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:b78b999d-a9fa-586c-a505-a42799f00e49",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T06:52:54Z",
+   "component": {
+    "type": "application",
+    "name": "MNE",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/MNE@83b357604d34",
+    "purl": "pkg:generic/anticloud/MNE@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "MIT"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": ""
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": [
+   {
+    "type": "library",
+    "name": "PyYAML",
+    "version": ">=6.0",
+    "purl": "pkg:pypi/pyyaml@6.0",
+    "bom-ref": "pypi/PyYAML@>=6.0"
+   },
+   {
+    "type": "library",
+    "name": "ctransformers",
+    "version": ">=0.2.27",
+    "purl": "pkg:pypi/ctransformers@0.2.27",
+    "bom-ref": "pypi/ctransformers@>=0.2.27"
+   },
+   {
+    "type": "library",
+    "name": "llama-cpp-python",
+    "version": ">=0.2.0",
+    "purl": "pkg:pypi/llama-cpp-python@0.2.0",
+    "bom-ref": "pypi/llama-cpp-python@>=0.2.0"
+   },
+   {
+    "type": "library",
+    "name": "huggingface-hub",
+    "version": ">=0.20",
+    "purl": "pkg:pypi/huggingface-hub@0.20",
+    "bom-ref": "pypi/huggingface-hub@>=0.20"
+   },
+   {
+    "type": "library",
+    "name": "fastembed",
+    "version": ">=0.3.0",
+    "purl": "pkg:pypi/fastembed@0.3.0",
+    "bom-ref": "pypi/fastembed@>=0.3.0"
+   },
+   {
+    "type": "library",
+    "name": "onnxruntime",
+    "version": ">=1.21.0,<1.29",
+    "purl": "pkg:pypi/onnxruntime@1.21.0,<1.29",
+    "bom-ref": "pypi/onnxruntime@>=1.21.0,<1.29"
+   },
+   {
+    "type": "library",
+    "name": "sqlite-vec",
+    "version": ">=0.1.9,<0.1.10",
+    "purl": "pkg:pypi/sqlite-vec@0.1.9,<0.1.10",
+    "bom-ref": "pypi/sqlite-vec@>=0.1.9,<0.1.10"
+   },
+   {
+    "type": "library",
+    "name": "mcp",
+    "version": ">=2.0.0; python_version >= ",
+    "purl": "pkg:pypi/mcp@2.0.0; python_version >= ",
+    "bom-ref": "pypi/mcp@>=2.0.0; python_version >= "
+   },
+   {
+    "type": "library",
+    "name": "anyio",
+    "version": ">=4.0; python_version >= ",
+    "purl": "pkg:pypi/anyio@4.0; python_version >= ",
+    "bom-ref": "pypi/anyio@>=4.0; python_version >= "
+   },
+   {
+    "type": "library",
+    "name": "openclaw",
+    "version": ">=0.1.0; python_version >= ",
+    "purl": "pkg:pypi/openclaw@0.1.0; python_version >= ",
+    "bom-ref": "pypi/openclaw@>=0.1.0; python_version >= "
+   },
+   {
+    "type": "library",
+    "name": "pypdfium2",
+    "version": ">=4.30",
+    "purl": "pkg:pypi/pypdfium2@4.30",
+    "bom-ref": "pypi/pypdfium2@>=4.30"
+   },
+   {
+    "type": "library",
+    "name": "pillow",
+    "version": ">=10",
+    "purl": "pkg:pypi/pillow@10",
+    "bom-ref": "pypi/pillow@>=10"
+   },
+   {
+    "type": "library",
+    "name": "pytest",
+    "version": ">=7.0",
+    "purl": "pkg:pypi/pytest@7.0",
+    "bom-ref": "pypi/pytest@>=7.0"
+   },
+   {
+    "type": "library",
+    "name": "mnemosyne-install",
+    "version": "=mnemosyne.install:main",
+    "purl": "pkg:pypi/mnemosyne-install@mnemosyne.install:main",
+    "bom-ref": "pypi/mnemosyne-install@=mnemosyne.install:main"
+   },
+   {
+    "type": "library",
+    "name": "mnemosyne-uninstall",
+    "version": "=mnemosyne.install:uninstall_main",
+    "purl": "pkg:pypi/mnemosyne-uninstall@mnemosyne.install:uninstall_main",
+    "bom-ref": "pypi/mnemosyne-uninstall@=mnemosyne.install:uninstall_main"
+   },
+   {
+    "type": "library",
+    "name": "mnemosyne",
+    "version": "=mnemosyne.cli:run_cli",
+    "purl": "pkg:pypi/mnemosyne@mnemosyne.cli:run_cli",
+    "bom-ref": "pypi/mnemosyne@=mnemosyne.cli:run_cli"
+   },
+   {
+    "type": "library",
+    "name": "mnemosyne-browser",
+    "version": "=mnemosyne.integrations.memory_browser:main",
+    "purl": "pkg:pypi/mnemosyne-browser@mnemosyne.integrations.memory_browser:main",
+    "bom-ref": "pypi/mnemosyne-browser@=mnemosyne.integrations.memory_browser:main"
+   },
+   {
+    "type": "library",
+    "name": "mnemosyne-auto-save",
+    "version": "=mnemosyne.integrations.auto_save_openwebui:main",
+    "purl": "pkg:pypi/mnemosyne-auto-save@mnemosyne.integrations.auto_save_openwebui:main",
+    "bom-ref": "pypi/mnemosyne-auto-save@=mnemosyne.integrations.auto_save_openwebui:main"
+   },
+   {
+    "type": "library",
+    "name": "@types/vscode",
+    "version": "^1.85.0",
+    "purl": "pkg:npm/@types/vscode@^1.85.0",
+    "bom-ref": "npm/@types/vscode@^1.85.0"
+   },
+   {
+    "type": "library",
+    "name": "@types/node",
+    "version": "^20.0.0",
+    "purl": "pkg:npm/@types/node@^20.0.0",
+    "bom-ref": "npm/@types/node@^20.0.0"
+   },
+   {
+    "type": "library",
+    "name": "typescript",
+    "version": "^5.3.0",
+    "purl": "pkg:npm/typescript@^5.3.0",
+    "bom-ref": "npm/typescript@^5.3.0"
+   },
+   {
+    "type": "library",
+    "name": "eslint",
+    "version": "^8.50.0",
+    "purl": "pkg:npm/eslint@^8.50.0",
+    "bom-ref": "npm/eslint@^8.50.0"
+   },
+   {
+    "type": "library",
+    "name": "builtin-modules",
+    "version": "3.3.0",
+    "purl": "pkg:npm/builtin-modules@3.3.0",
+    "bom-ref": "npm/builtin-modules@3.3.0"
+   },
+   {
+    "type": "library",
+    "name": "esbuild",
+    "version": "0.19.0",
+    "purl": "pkg:npm/esbuild@0.19.0",
+    "bom-ref": "npm/esbuild@0.19.0"
+   },
+   {
+    "type": "library",
+    "name": "obsidian",
+    "version": "^1.5.0",
+    "purl": "pkg:npm/obsidian@^1.5.0",
+    "bom-ref": "npm/obsidian@^1.5.0"
+   },
+   {
+    "type": "library",
+    "name": "tslib",
+    "version": "2.6.0",
+    "purl": "pkg:npm/tslib@2.6.0",
+    "bom-ref": "npm/tslib@2.6.0"
+   }
+  ]
+ },
+ "elapsed_seconds": 16.43
+}
