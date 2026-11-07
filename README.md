@@ -125,8 +125,7 @@ results = recall("user preferences")
 ## Benchmarks
 
 Measured by the Anticloud assurance suite. Every value below is read from this
-project's `BENCH.json`, produced by a real run — the SHA3-256 of that file is
-`b4583325daf37612c6ea751ca8efef0db24385dded21cf381f6a21841c47e745`.
+project's `BENCH.json`, produced by a real run — the SHA3-256 of `BENCH.json`: `0bd782ca7f158439f98f81768f7043e777d28869f7570c5e8e40e447220310dd`.
 
 | Framework | Controls | Evidence | Coverage | Result |
 |---|---|---|---|---|
